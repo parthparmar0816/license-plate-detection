@@ -1,0 +1,7 @@
+dataset
+output
+training_data
+venv
+test.py
+yolov8s.pt
+__pycache__
