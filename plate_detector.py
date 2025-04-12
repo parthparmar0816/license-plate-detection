@@ -34,7 +34,7 @@ model = YOLO("saved_models/indian_license_plate_detector2/weights/best.pt")
 
 def detect_license_plate(frame):
     """Detect license plate in a video frame using YOLOv8."""
-    results = model(frame)
+    results = model.track(frame, persist=True, verbose=False)
 
     for result in results:
         for box in result.boxes:

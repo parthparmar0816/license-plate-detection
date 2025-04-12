@@ -5,3 +5,4 @@ paddlepaddle
 paddleocr
 streamlit
 ultralytics 
+python-doctr[all]
