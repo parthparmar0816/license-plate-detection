@@ -4,7 +4,7 @@ from paddleocr import PaddleOCR
 import re
 
 # Initialize PaddleOCR
-ocr = PaddleOCR(use_angle_cls=False, lang='en', rec_algorithm="SVTR_LCNet",drop_score=0.75,show_log=False)
+ocr = PaddleOCR(use_angle_cls=True, lang='en', rec_algorithm="SVTR_LCNet",drop_score=0.75,show_log=False)
 
 def preprocess_image(image):
     """Enhance image for better OCR accuracy."""
