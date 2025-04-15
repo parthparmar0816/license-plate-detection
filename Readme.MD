@@ -2,12 +2,12 @@
 # License Plate Detection (Indian Scenario)
 
 This project focuses on detecting and recognizing Indian vehicle license plates using deep learning techniques.
-It leverages the YOLOv5 architecture for object detection and EasyOCR for character recognition.
+It leverages the YOLOv8 architecture for object detection and Paddle OCR for character recognition.
 
 ## Features
 
-- **License Plate Detection**: Utilizes YOLOv5 for accurate detection of license plates in images and videos.
-- **Optical Character Recognition (OCR)**: Employs EasyOCR to extract alphanumeric characters from detected license plates.
+- **License Plate Detection**: Utilizes YOLOv8 for accurate detection of license plates in images and videos.
+- **Optical Character Recognition (OCR)**: Employs Paddle OCR to extract alphanumeric characters from detected license plates.
 - **Indian RTO Mapping**: Maps detected license plate codes to their corresponding Indian Regional Transport Offices (RTOs) using `Indian_RTO.csv`.
 
 ## Project Structure
@@ -17,9 +17,9 @@ license-plate-detection/
 ├── saved_models/           # Directory containing trained model weights
 ├── app.py                  # Streamlit application for real-time detection
 ├── main.py                 # Entry point for the application
-├── ocr.py                  # Module for OCR processing using EasyOCR
-├── plate_detector.py       # Module for detecting license plates using YOLOv5
-├── train.py                # Script for training the YOLOv5 model
+├── ocr.py                  # Module for OCR processing using Paddle OCR
+├── plate_detector.py       # Module for detecting license plates using YOLOv8
+├── train.py                # Script for training the YOLOv8 model
 ├── xml_to_txt.py           # Utility to convert XML annotations to YOLO format
 ├── Indian_RTO.csv          # CSV file mapping license plate codes to RTOs
 ├── state_codes.py          # Python dictionary mapping state codes
@@ -29,12 +29,7 @@ license-plate-detection/
 
 ## Installation
 
-1. **Clone the Repository**
-
-```bash
-git clone https://github.com/parthparmar0816/license-plate-detection.git
-cd license-plate-detection
-```
+1. **Unzip the Folder**
 
 2. **Set Up a Virtual Environment (Optional but Recommended)(Ubuntu)**
 
